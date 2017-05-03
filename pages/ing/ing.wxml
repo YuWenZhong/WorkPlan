@@ -35,7 +35,7 @@
       </view>
     </view>
     <view class="ing_item_time2" data-item="{{item}}" id="{{index}}" bindtap="tipItem">
-      <view class="ing_item_title" data-item="{{item}}" id="{{index}}" bindtap="tipItem">
+      <view class="ing_item_title" data-item="{{item}}" id="{{index}}">
         {{item.title}}
       </view>
     </view>

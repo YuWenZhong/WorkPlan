@@ -21,7 +21,7 @@ page, .ing_zt {
 }
 
 .ing_item_time {
-  min-width: 30%;
+  min-width: 25%;
 }
 .ing_item_time2{
   flex: 1;
@@ -34,8 +34,9 @@ page, .ing_zt {
 }
 
 .ing_item_button {
-  background-color: #096;
-  color: #fff;
+  /*background-color: #096;*/
+  border: solid 1px #096;
+  color: #096;
   border-radius: 5px;
   width: 100%;
   padding-top: 10rpx;
@@ -53,17 +54,17 @@ page, .ing_zt {
 
 .ing_item_ts {
   font-size: 80rpx;
-  color: #66cdaa;
+  color: #096;
   font-family: YouYuan;
 }
 .ing_item_ts2{
   font-size: 80rpx;
-  color: #EE6A50;
+  color: #e51c23;
   font-family: YouYuan;
 }
 .ing_item_ts3{
   font-size: 80rpx;
-  color: #828282;
+  color: #757575;
   font-family: YouYuan;
 }
 
