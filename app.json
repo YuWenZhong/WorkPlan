@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/ing/ing",
+    "pages/ed/ed",
+    "pages/new/new"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "工作计划",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#b6b6b6",
+    "selectedColor":"#009966",
+    "backgroundColor":"#f6f6f6",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/ing/ing",
+        "text": "进行中",
+        "iconPath":"resources/img/ing1.png",
+        "selectedIconPath":"resources/img/ing.png"
+      },
+      {
+        "pagePath": "pages/ed/ed",
+        "text": "已完成",
+        "iconPath":"resources/img/ed1.png",
+        "selectedIconPath":"resources/img/ed.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+/* pages/ing/ing.wxss */
+
+page, .ing_zt {
+  height: 100%;
+  color: #888;
+  display: flex;
+  flex-direction: column;
+}
+
+.ing_list {
+  padding: 20rpx;
+  flex: 1;
+}
+
+.ing_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid #c4c4c4 2px;
+  padding: 5px;
+}
+
+.ing_item_time {
+  min-width: 30%;
+}
+
+.ing_item_zyx {
+  width: 20%;
+}
+
+.ing_item_button {
+  background-color: #096;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.ing_item_title {
+  flex: 1;
+  font-size: 13px;
+}
+
+.ing_item_ts {
+  font-size: 80rpx;
+  color: #66cdaa;
+  font-family: YouYuan;
+}
+.ing_item_ts2{
+  font-size: 80rpx;
+  color: #EE6A50;
+  font-family: YouYuan;
+}
+.ing_item_ts3{
+  font-size: 80rpx;
+  color: #828282;
+  font-family: YouYuan;
+}
+
+.ing_item_sy {
+  font-size: 13px;
+}
+
+.buttonView_ok {
+  /*flex-shrink: 0;*/
+  height: 150rpx;
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view_ok {
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  background-color: #096;
+  color: #fff;
+  font-size: 48rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

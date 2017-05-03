@@ -1,0 +1,49 @@
+<view class="ing_userinfo_ts">
+  <view class="ing_userInfo">
+    <image class="ed_userInfo_img" src="{{avatarUrl}}"></image>
+    <view class="ing_userInfo_name">{{nickName}}</view>
+  </view>
+  <view class="ing_ts">
+    当前计划共有
+    <text class="sum_style">{{list_show.length}}</text> 项工作任务需完成
+  </view>
+</view>
+<view class="ing_list">
+  <view class="ing_item" wx:for="{{list_show}}">
+    <view class="ing_item_time" data-item="{{item}}" id="{{index}}" bindtap="tipItem" wx:if="{{item.time_start <= 0 &&item.time >= 0}}">
+      <view class="ing_item_ts" data-item="{{item}}" id="{{index}}">
+        {{item.time}}天
+      </view>
+      <view class="ing_item_sy" data-item="{{item}}" id="{{index}}">
+        剩余
+      </view>
+    </view>
+    <view class="ing_item_time" data-item="{{item}}" id="{{index}}" bindtap="tipItem" wx:if="{{item.time_start <= 0 &&item.time < 0}}">
+      <view class="ing_item_ts2" data-item="{{item}}" id="{{index}}">
+        {{-item.time}}天
+      </view>
+      <view class="ing_item_sy" data-item="{{item}}" id="{{index}}">
+        超出
+      </view>
+    </view>
+    <view class="ing_item_time" data-item="{{item}}" id="{{index}}" bindtap="tipItem" wx:if="{{item.time_start > 0}}">
+      <view class="ing_item_ts3" data-item="{{item}}" id="{{index}}">
+        {{item.time_start}}天
+      </view>
+      <view class="ing_item_sy" data-item="{{item}}" id="{{index}}">
+        距离开始
+      </view>
+    </view>
+    <view class="ing_item_title" data-item="{{item}}" id="{{index}}" bindtap="tipItem">
+      {{item.title}}
+    </view>
+    <view class="ing_item_zyx"  wx:if="{{item.time_start <= 0}}">
+      <view class="ing_item_button" data-item="{{item}}" id="{{index}}" bindtap="rwywc">
+        完成
+      </view>
+    </view>
+  </view>
+</view>
+<view class="buttonView_ok">
+  <view class="view_ok" bindtap="TapNew">new</view>
+</view>

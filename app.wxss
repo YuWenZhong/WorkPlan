@@ -1,0 +1,73 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/*用户信息*/
+.ed_userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-shrink:0;
+  background-color: #009966;
+}
+.ed_userInfo_img{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    border: solid 4rpx #fff ;
+}
+.ed_userInfo_name{
+  margin-top: 10px;
+  font-size: 13px;
+  color: #fff;
+}
+
+
+.sum_style {
+  color: #fff;
+  font-size: 60px;
+}
+
+.ing_userinfo_ts {
+  display: flex;
+  background-color: #096;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.ing_userInfo {
+  /*margin: 0 auto;*/
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*flex-shrink: 0;*//*background-color: #096;*/
+}
+
+.ing_userInfo_name {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+}
+
+.ing_ts {
+  padding: 20rpx 20rpx 10rpx 20rpx;
+  font-size: 13px;
+  color: #fff;
+  /*margin-bottom: 5px;*/
+}

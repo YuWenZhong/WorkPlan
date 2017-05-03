@@ -1,0 +1,64 @@
+
+<!--pages/ed/ed.wxml-->
+<view class="classname">
+
+  <!--<view class="ed_userInfo">
+    <image class="ed_userInfo_img" src="{{avatarUrl}}"></image>
+    <view class="ed_userInfo_name">{{nickName}}</view>
+  </view>-->
+  <view class="ing_userinfo_ts">
+    <view class="ing_userInfo">
+      <image class="ed_userInfo_img" src="{{avatarUrl}}"></image>
+      <view class="ing_userInfo_name">{{nickName}}</view>
+    </view>
+    <view class="ing_ts">
+      截止日前已完成
+      <text class="sum_style">{{tasklist.length}}</text> 项工作任务
+    </view>
+  </view>
+  <view class="ed_sjz_list" >
+
+    <!--<view class="ed_sjz_item_zhou_circle2" wx:if="{{tasklist.length >=1}}"></view>-->
+    <view class="ed_sjz_item" wx:if="{{tasklist.length >=1}}">
+      <view class="ed_sjz_item_time">
+      </view>
+      <view class="ed_sjz_item_zhou">
+        <view class="ed_sjz_item_zhou_circle2">
+        </view>
+      </view>
+      <view class="ed_sjz_item_title">
+      </view>
+    </view>
+    <view class="ed_sjz_item" data-item="{{item}}" bindtap="tipItem" wx:for="{{tasklist}}">
+      <view class="ed_sjz_item_time">
+        {{item.time3}}
+      </view>
+      <view class="ed_sjz_item_zhou">
+        <view class="ed_sjz_item_zhou_line">
+        </view>
+        <view class="ed_sjz_item_zhou_circle">
+        </view>
+        <view class="ed_sjz_item_zhou_line">
+        </view>
+      </view>
+      <view class="ed_sjz_item_title">
+        <view class="ed_sjz_item_title_task ">{{item.title}}</view>
+        <view class="">原计划用时
+          <text class="ed_sjz_item_title_ts1">{{item.yjhys}}</text>天，实际用时
+          <text class="ed_sjz_item_title_ts1">{{item.sjys}}</text>天</view>
+      </view>
+    </view>
+    <view class="ed_sjz_item"  wx:if="{{tasklist.length >=1}}">
+      <view class="ed_sjz_item_time">
+      </view>
+      <view class="ed_sjz_item_zhou">
+        <view class="ed_sjz_item_zhou_circle2">
+        </view>
+      </view>
+      <view class="ed_sjz_item_title">
+      </view>
+    </view>
+
+    <!--<view class="ed_sjz_item_zhou_circle2" wx:if="{{tasklist.length >=1}}"></view>-->
+  </view>
+</view>

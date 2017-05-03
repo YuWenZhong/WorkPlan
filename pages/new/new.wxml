@@ -1,0 +1,39 @@
+<view class="classname">
+  <view class="form_style">
+    <view class="form_line">
+      任务名称：
+    </view>
+    <view class="form_line input_view">
+      <input class="form_input" maxlength="15" placeholder="任务名称最大输入长度不超过15" bindinput="bindKeyInput" />
+    </view>
+    <view class="form_line">
+      开始日期：
+    </view>
+    <picker mode="date" value="{{time1}}" start="{{time_start}}" end="{{time_end}}" bindchange="bindDateChange1">
+      <view class="picker form_line input_view">{{time1}}</view>
+    </picker>
+    <view class="form_line">
+      结束日期：
+    </view>
+    <picker mode="date" value="{{time2}}" start="{{time_start}}" end="{{time_end}}" bindchange="bindDateChange2">
+      <view class="picker form_line input_view">{{time2}}</view>
+    </picker>
+    <!--<view class="form_line">
+      重要性：
+    </view>
+    <view class=" input_view">
+      <view class="{{zyx>=1?'form_zyx_jdt form_zyx_jdt1_t':'form_zyx_jdt form_zyx_jdt1'}}" id="1" bindtap="tap_zy">
+        一般
+      </view>
+      <view class="{{zyx>=2?'form_zyx_jdt form_zyx_jdt2_t':'form_zyx_jdt form_zyx_jdt2'}}" id="2"  bindtap="tap_zy">
+        重要
+      </view>
+      <view class="{{zyx>=3?'form_zyx_jdt form_zyx_jdt3_t':'form_zyx_jdt form_zyx_jdt3'}}" id="3"  bindtap="tap_zy">
+        很重要
+      </view>
+    </view>-->
+    <view class="buttonView_ok">
+      <view class="view_ok" bindtap="TapOk">ok</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,50 @@
+/* pages/ed/ed.wxss */
+
+.ed_sjz_list{
+  margin-top: 20rpx;
+}
+.ed_sjz_item{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #888;
+}
+.ed_sjz_item_time{
+  width: 25%;
+}
+.ed_sjz_item_title{
+  flex: 1;
+}
+.ed_sjz_item_zhou{
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  align-items: center;
+  padding: 0 10px;
+}
+.ed_sjz_item_zhou_line{
+  background-color: #ccc;
+  width: 10rpx;
+  height: 40rpx;
+}
+.ed_sjz_item_zhou_circle{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  border: solid 4rpx #009966;
+}
+.ed_sjz_item_zhou_circle2{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  border: solid 4rpx #009966;
+  background-color: #009966;
+}
+.ed_sjz_item_title_task{
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.ed_sjz_item_title_ts1{
+  color: #009966;
+}

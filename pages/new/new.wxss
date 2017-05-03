@@ -1,0 +1,86 @@
+/* pages/new/new.wxss */
+.form_style{
+    padding: 20rpx;
+    font-size: 14px;
+}
+.form_line{
+    padding: 2px 0;
+}
+.input_view{
+    border-radius: 5px;
+    height: 24px;
+    width: 100%;
+    border: solid #ccc 1px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+    color: #009966;
+}
+.buttonView_ok{
+    height: 150rpx;
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view_ok{
+    height: 150rpx;
+    width: 150rpx;
+    border-radius: 50%;
+    background-color: #009966;
+    color: #fff;
+    font-size: 48rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+page{
+    background-color: #f6f6f6;
+}
+
+.form_input{
+    width: 100%;
+}
+.form_zyx_jdt{
+    width: 33%;
+    height: 24px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_zyx_jdt1{
+    /*background-color: #009966;*/
+    background: linear-gradient(to right, #ffffff , #dddddd);
+    color: #009966;
+}
+.form_zyx_jdt2{
+    background: linear-gradient(to right, #dddddd , #bbbbbb);
+    color: #009966;
+    border-left: solid #ccc 1px;
+    border-right: solid #ccc 1px;
+}
+.form_zyx_jdt3{
+    background: linear-gradient(to right, #bbbbbb , #999999);
+    color: #009966;
+}
+
+
+.form_zyx_jdt1_t{
+    /*background-color: #009966;*/
+    background: linear-gradient(to right, #66cc33 , #44bb44);
+    color: #fff;
+}
+.form_zyx_jdt2_t{
+    background: linear-gradient(to right, #44bb44 , #22aa55);
+    color: #fff;
+    border-left: solid #ccc 1px;
+    border-right: solid #ccc 1px;
+}
+.form_zyx_jdt3_t{
+    background: linear-gradient(to right, #22aa55 , #009966);
+    color: #fff;
+}
