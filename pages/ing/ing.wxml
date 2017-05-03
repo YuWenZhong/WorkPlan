@@ -34,10 +34,12 @@
         距离开始
       </view>
     </view>
-    <view class="ing_item_title" data-item="{{item}}" id="{{index}}" bindtap="tipItem">
-      {{item.title}}
+    <view class="ing_item_time2" data-item="{{item}}" id="{{index}}" bindtap="tipItem">
+      <view class="ing_item_title" data-item="{{item}}" id="{{index}}" bindtap="tipItem">
+        {{item.title}}
+      </view>
     </view>
-    <view class="ing_item_zyx"  wx:if="{{item.time_start <= 0}}">
+    <view class="ing_item_zyx" wx:if="{{item.time_start <= 0}}">
       <view class="ing_item_button" data-item="{{item}}" id="{{index}}" bindtap="rwywc">
         完成
       </view>

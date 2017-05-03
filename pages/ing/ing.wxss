@@ -23,7 +23,12 @@ page, .ing_zt {
 .ing_item_time {
   min-width: 30%;
 }
-
+.ing_item_time2{
+  flex: 1;
+  align-self:stretch;
+  display: flex;
+  align-items: center;
+}
 .ing_item_zyx {
   width: 20%;
 }
