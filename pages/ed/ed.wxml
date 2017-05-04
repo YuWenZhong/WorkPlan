@@ -1,6 +1,6 @@
 
 <!--pages/ed/ed.wxml-->
-<view class="classname">
+<!--<view class="classname">-->
 
   <!--<view class="ed_userInfo">
     <image class="ed_userInfo_img" src="{{avatarUrl}}"></image>
@@ -16,7 +16,7 @@
       <text class="sum_style">{{tasklist.length}}</text> 项工作任务
     </view>
   </view>
-  <view class="ed_sjz_list" >
+  <view class="ed_sjz_list" wx:if="{{tasklist.length >= 1}}">
 
     <!--<view class="ed_sjz_item_zhou_circle2" wx:if="{{tasklist.length >=1}}"></view>-->
     <view class="ed_sjz_item" wx:if="{{tasklist.length >=1}}">
@@ -48,7 +48,7 @@
           <text class="ed_sjz_item_title_ts1">{{item.sjys}}</text>天</view>
       </view>
     </view>
-    <view class="ed_sjz_item"  wx:if="{{tasklist.length >=1}}">
+    <view class="ed_sjz_item" wx:if="{{tasklist.length >=1}}">
       <view class="ed_sjz_item_time">
       </view>
       <view class="ed_sjz_item_zhou">
@@ -61,4 +61,13 @@
 
     <!--<view class="ed_sjz_item_zhou_circle2" wx:if="{{tasklist.length >=1}}"></view>-->
   </view>
-</view>
+  <view class="zwwcrw" wx:if="{{tasklist.length == 0}}">
+    <image class="zw_img" src="../../resources/img/mr_fd.png" mode="widthFix"></image>
+    <view>
+      暂无完成任务,加油哦！
+    </view>
+  </view>
+  <view class="buttonView_ok" wx:if="{{tasklist.length == 0}}">
+    
+  </view>
+<!--</view>-->

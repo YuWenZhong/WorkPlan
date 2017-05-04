@@ -1,7 +1,13 @@
 /* pages/ed/ed.wxss */
-
+page, .ing_zt {
+  height: 100%;
+  color: #888;
+  display: flex;
+  flex-direction: column;
+}
 .ed_sjz_list{
-  margin-top: 20rpx;
+  /*margin-top: 20rpx;*/
+  padding:20rpx;
 }
 .ed_sjz_item{
   display: flex;
@@ -11,7 +17,7 @@
   color: #888;
 }
 .ed_sjz_item_time{
-  width: 25%;
+  width: 28%;
 }
 .ed_sjz_item_title{
   flex: 1;

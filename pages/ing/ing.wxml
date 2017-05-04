@@ -8,7 +8,7 @@
     <text class="sum_style">{{list_show.length}}</text> 项工作任务需完成
   </view>
 </view>
-<view class="ing_list">
+<view class="ing_list" wx:if="{{list_show.length >= 1}}">
   <view class="ing_item" wx:for="{{list_show}}">
     <view class="ing_item_time" data-item="{{item}}" id="{{index}}" bindtap="tipItem" wx:if="{{item.time_start <= 0 &&item.time >= 0}}">
       <view class="ing_item_ts" data-item="{{item}}" id="{{index}}">
@@ -44,6 +44,12 @@
         完成
       </view>
     </view>
+  </view>
+</view>
+<view class="zwwcrw" wx:if="{{list_show.length == 0}}">
+  <image class="zw_img" src="../../resources/img/mr_zw.png" mode="widthFix"></image>
+  <view>
+    暂无进行任务,快去新建一条吧！
   </view>
 </view>
 <view class="buttonView_ok">
